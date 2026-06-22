@@ -66,5 +66,5 @@ The insights generated from this analysis can directly support data-driven decis
 
 ## Entity Relationship Diagram
 
-![ER Diagram](assets/er_diagram.png)
+er_diagram.png
 
