@@ -37,32 +37,26 @@ JOIN products p ON oi.product_id = p.product_id
 GROUP BY o.region
 ORDER BY total_revenue DESC;
 
-```markdown
+## SQL Query Example
+
+```sql
+SELECT o.region,
+       SUM(p.price * oi.quantity) AS total_revenue
+FROM orders o
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+GROUP BY o.region
+ORDER BY total_revenue DESC;
+```
+
 ## Key Insights
 
-## Future AI Enhancements
-
-- AI-based customer churn prediction
-- Sales demand forecasting using machine learning
-- Copilot chatbot for natural language sales Q&A
-- Smart product recommendation engine
-- AI-driven retention campaign suggestions
-
-- North region generated the highest revenue
-- High-value customers contributed 60%+ total sales
-- Electronics category showed best monthly growth
-- Customer inactivity risk increased in low-performing regions
+- North region generated highest revenue
+- High-value customers contributed 60%+ sales
 
 ## Business Impact
 
-This project helps retail businesses:
-
-- Identify high-value customers for targeted marketing
-- Track monthly revenue trends for forecasting
-- Analyze regional performance for expansion strategy
-- Detect inactive/high-risk customers for retention campaigns
-
-The insights generated from this analysis can directly support data-driven decision making.
+...
 
 ## Entity Relationship Diagram
 
