@@ -4,19 +4,18 @@ An advanced Retail Revenue Intelligence project built using MySQL.
 This project analyzes customer behavior, revenue trends, regional sales performance, 
 and customer risk classification to generate actionable business insights.
 
-## Project Highlights
+## 📊 Project Highlights
 - Customer Segmentation (High / Medium / Low Value)
 - Revenue Analysis by Month
 - Regional Sales Analysis
 - Customer Risk Classification
 
-## Tools Used
+## 🛠️ Tools Used
 - MySQL
 - SQL Joins & Aggregations
 - Business Intelligence Concepts
 
-  ## Database Structure
-
+## 🗄️ Database Structure
 The project uses a relational retail database with the following tables:
 
 - customers (customer_id, name, city, join_date)
@@ -26,7 +25,7 @@ The project uses a relational retail database with the following tables:
 
 The tables are connected using primary and foreign key relationships.
 
-## SQL Query Example
+## 💻 SQL Query Example
 ```sql
 SELECT o.region,
        SUM(p.price * oi.quantity) AS total_revenue
@@ -37,12 +36,12 @@ GROUP BY o.region
 ORDER BY total_revenue DESC;
 ```
 
-## Key Insights
+## 📈 Key Insights
 
 - North region generated highest revenue
 - High-value customers contributed 60%+ sales
 
-## Business Impact
+## 🎯 Business Impact
 
 - Identified high-value customer segments for targeted marketing
 - Analyzed regional sales performance across multiple locations
@@ -50,20 +49,16 @@ ORDER BY total_revenue DESC;
 - Highlighted customer inactivity risks for retention planning
 ...
 
-## Entity Relationship Diagram
+## 🔗 Entity Relationship Diagram
 
 ![ER Diagram](er_diagram.png)
 
 ## Project Outcomes
 
 ✔ Customer Segmentation
-
 ✔ Revenue Trend Analysis
-
 ✔ Regional Performance Insights
-
 ✔ Customer Risk Classification
-
 ✔ Business Intelligence Reporting
 
 ## 🚀 Results
